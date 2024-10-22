@@ -1,0 +1,14 @@
+C:\Users\Santi\Desktop\Proyectos\CalendarOfEvents\CalendarOfEvents-DataAccessLayer\bin\Debug\net8.0\CalendarOfEvents-DataAccessLayer.deps.json
+C:\Users\Santi\Desktop\Proyectos\CalendarOfEvents\CalendarOfEvents-DataAccessLayer\bin\Debug\net8.0\CalendarOfEvents-DataAccessLayer.runtimeconfig.json
+C:\Users\Santi\Desktop\Proyectos\CalendarOfEvents\CalendarOfEvents-DataAccessLayer\bin\Debug\net8.0\CalendarOfEvents-DataAccessLayer.dll
+C:\Users\Santi\Desktop\Proyectos\CalendarOfEvents\CalendarOfEvents-DataAccessLayer\bin\Debug\net8.0\CalendarOfEvents-DataAccessLayer.pdb
+C:\Users\Santi\Desktop\Proyectos\CalendarOfEvents\CalendarOfEvents-DataAccessLayer\obj\Debug\net8.0\CalendarOfEvents-DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\Santi\Desktop\Proyectos\CalendarOfEvents\CalendarOfEvents-DataAccessLayer\obj\Debug\net8.0\CalendarOfEvents-DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Santi\Desktop\Proyectos\CalendarOfEvents\CalendarOfEvents-DataAccessLayer\obj\Debug\net8.0\CalendarOfEvents-DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\Santi\Desktop\Proyectos\CalendarOfEvents\CalendarOfEvents-DataAccessLayer\obj\Debug\net8.0\CalendarOfEvents-DataAccessLayer.AssemblyInfo.cs
+C:\Users\Santi\Desktop\Proyectos\CalendarOfEvents\CalendarOfEvents-DataAccessLayer\obj\Debug\net8.0\CalendarOfEvents-DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Santi\Desktop\Proyectos\CalendarOfEvents\CalendarOfEvents-DataAccessLayer\obj\Debug\net8.0\CalendarOfEvents-DataAccessLayer.dll
+C:\Users\Santi\Desktop\Proyectos\CalendarOfEvents\CalendarOfEvents-DataAccessLayer\obj\Debug\net8.0\refint\CalendarOfEvents-DataAccessLayer.dll
+C:\Users\Santi\Desktop\Proyectos\CalendarOfEvents\CalendarOfEvents-DataAccessLayer\obj\Debug\net8.0\CalendarOfEvents-DataAccessLayer.pdb
+C:\Users\Santi\Desktop\Proyectos\CalendarOfEvents\CalendarOfEvents-DataAccessLayer\obj\Debug\net8.0\CalendarOfEvents-DataAccessLayer.genruntimeconfig.cache
+C:\Users\Santi\Desktop\Proyectos\CalendarOfEvents\CalendarOfEvents-DataAccessLayer\obj\Debug\net8.0\ref\CalendarOfEvents-DataAccessLayer.dll
