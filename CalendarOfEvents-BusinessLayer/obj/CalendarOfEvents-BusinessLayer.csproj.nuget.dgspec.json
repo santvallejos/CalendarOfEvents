@@ -1,28 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Santi\\Desktop\\Proyectos\\CalendarOfEvents\\CalendarOfEvents-BusinessLayer\\CalendarOfEvents-BusinessLayer.csproj": {}
+    "/Users/soficubilla/Documents/Projects/dotnet/CalendarOfEvents/CalendarOfEvents-BusinessLayer/CalendarOfEvents-BusinessLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Santi\\Desktop\\Proyectos\\CalendarOfEvents\\CalendarOfEvents-BusinessLayer\\CalendarOfEvents-BusinessLayer.csproj": {
+    "/Users/soficubilla/Documents/Projects/dotnet/CalendarOfEvents/CalendarOfEvents-BusinessLayer/CalendarOfEvents-BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Santi\\Desktop\\Proyectos\\CalendarOfEvents\\CalendarOfEvents-BusinessLayer\\CalendarOfEvents-BusinessLayer.csproj",
+        "projectUniqueName": "/Users/soficubilla/Documents/Projects/dotnet/CalendarOfEvents/CalendarOfEvents-BusinessLayer/CalendarOfEvents-BusinessLayer.csproj",
         "projectName": "CalendarOfEvents-BusinessLayer",
-        "projectPath": "C:\\Users\\Santi\\Desktop\\Proyectos\\CalendarOfEvents\\CalendarOfEvents-BusinessLayer\\CalendarOfEvents-BusinessLayer.csproj",
-        "packagesPath": "C:\\Users\\Santi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Santi\\Desktop\\Proyectos\\CalendarOfEvents\\CalendarOfEvents-BusinessLayer\\obj\\",
+        "projectPath": "/Users/soficubilla/Documents/Projects/dotnet/CalendarOfEvents/CalendarOfEvents-BusinessLayer/CalendarOfEvents-BusinessLayer.csproj",
+        "packagesPath": "/Users/soficubilla/.nuget/packages/",
+        "outputPath": "/Users/soficubilla/Documents/Projects/dotnet/CalendarOfEvents/CalendarOfEvents-BusinessLayer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Santi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/soficubilla/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

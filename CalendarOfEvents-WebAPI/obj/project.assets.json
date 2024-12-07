@@ -8190,38 +8190,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Santi\\.nuget\\packages\\": {}
+    "/Users/soficubilla/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Santi\\Desktop\\Proyectos\\CalendarOfEvents\\CalendarOfEvents-WebAPI\\CalendarOfEvents-WebAPI.csproj",
+      "projectUniqueName": "/Users/soficubilla/Documents/Projects/dotnet/CalendarOfEvents/CalendarOfEvents-WebAPI/CalendarOfEvents-WebAPI.csproj",
       "projectName": "CalendarOfEvents-WebAPI",
-      "projectPath": "C:\\Users\\Santi\\Desktop\\Proyectos\\CalendarOfEvents\\CalendarOfEvents-WebAPI\\CalendarOfEvents-WebAPI.csproj",
-      "packagesPath": "C:\\Users\\Santi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Santi\\Desktop\\Proyectos\\CalendarOfEvents\\CalendarOfEvents-WebAPI\\obj\\",
+      "projectPath": "/Users/soficubilla/Documents/Projects/dotnet/CalendarOfEvents/CalendarOfEvents-WebAPI/CalendarOfEvents-WebAPI.csproj",
+      "packagesPath": "/Users/soficubilla/.nuget/packages/",
+      "outputPath": "/Users/soficubilla/Documents/Projects/dotnet/CalendarOfEvents/CalendarOfEvents-WebAPI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Santi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/soficubilla/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Santi\\Desktop\\Proyectos\\CalendarOfEvents\\CalendarOfEvents-BusinessLayer\\CalendarOfEvents-BusinessLayer.csproj": {
-              "projectPath": "C:\\Users\\Santi\\Desktop\\Proyectos\\CalendarOfEvents\\CalendarOfEvents-BusinessLayer\\CalendarOfEvents-BusinessLayer.csproj"
+            "/Users/soficubilla/Documents/Projects/dotnet/CalendarOfEvents/CalendarOfEvents-BusinessLayer/CalendarOfEvents-BusinessLayer.csproj": {
+              "projectPath": "/Users/soficubilla/Documents/Projects/dotnet/CalendarOfEvents/CalendarOfEvents-BusinessLayer/CalendarOfEvents-BusinessLayer.csproj"
             },
-            "C:\\Users\\Santi\\Desktop\\Proyectos\\CalendarOfEvents\\CalendarOfEvents-DataAccessLayer\\CalendarOfEvents-DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\Santi\\Desktop\\Proyectos\\CalendarOfEvents\\CalendarOfEvents-DataAccessLayer\\CalendarOfEvents-DataAccessLayer.csproj"
+            "/Users/soficubilla/Documents/Projects/dotnet/CalendarOfEvents/CalendarOfEvents-DataAccessLayer/CalendarOfEvents-DataAccessLayer.csproj": {
+              "projectPath": "/Users/soficubilla/Documents/Projects/dotnet/CalendarOfEvents/CalendarOfEvents-DataAccessLayer/CalendarOfEvents-DataAccessLayer.csproj"
             }
           }
         }
@@ -8281,7 +8278,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

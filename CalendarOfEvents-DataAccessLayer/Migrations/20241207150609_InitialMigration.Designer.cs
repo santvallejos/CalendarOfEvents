@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CalendarOfEvents_DataAccessLayer.Migrations
 {
     [DbContext(typeof(CalendarOfEventsDbContext))]
-    [Migration("20241022013401_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20241207150609_InitialMigration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -52,8 +52,6 @@ namespace CalendarOfEvents_DataAccessLayer.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId");
-
                     b.ToTable("Events");
                 });
 
@@ -76,22 +74,6 @@ namespace CalendarOfEvents_DataAccessLayer.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
-                });
-
-            modelBuilder.Entity("CalendarOfEvents_DataAccessLayer.Models.Event", b =>
-                {
-                    b.HasOne("CalendarOfEvents_DataAccessLayer.Models.User", "User")
-                        .WithMany("Events")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("CalendarOfEvents_DataAccessLayer.Models.User", b =>
-                {
-                    b.Navigation("Events");
                 });
 #pragma warning restore 612, 618
         }
