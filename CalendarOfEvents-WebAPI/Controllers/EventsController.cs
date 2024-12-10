@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -15,7 +15,6 @@ namespace CalendarOfEvents_WebAPI.Controllers
     public class EventsController : ControllerBase
     {
         private readonly CalendarOfEventsDbContext _context;
-
         public EventsController(CalendarOfEventsDbContext context)
         {
             _context = context;
@@ -28,9 +27,9 @@ namespace CalendarOfEvents_WebAPI.Controllers
             return await _context.Events.ToListAsync();
         }
 
-        // GET: api/Events/5
+        // GET: api/Events/{id}
         [HttpGet("{id}")]
-        public async Task<ActionResult<Event>> GetEvent(int id)
+        public async Task<ActionResult<Event?>> GetTEventById(Guid id)
         {
             var @event = await _context.Events.FindAsync(id);
 
@@ -42,12 +41,11 @@ namespace CalendarOfEvents_WebAPI.Controllers
             return @event;
         }
 
-        // PUT: api/Events/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // PUT: api/Events/{id}
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutEvent(int id, Event @event)
+        public async Task<ActionResult> PutEvent(Guid id, Event @event)
         {
-            if (id != @event.Id)
+            if(id != @event.Id)
             {
                 return BadRequest();
             }
@@ -58,9 +56,9 @@ namespace CalendarOfEvents_WebAPI.Controllers
             {
                 await _context.SaveChangesAsync();
             }
-            catch (DbUpdateConcurrencyException)
+            catch(DbUpdateConcurrencyException)
             {
-                if (!EventExists(id))
+                if(!EventExists(id))
                 {
                     return NotFound();
                 }
@@ -74,22 +72,23 @@ namespace CalendarOfEvents_WebAPI.Controllers
         }
 
         // POST: api/Events
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
+
         public async Task<ActionResult<Event>> PostEvent(Event @event)
         {
             _context.Events.Add(@event);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetEvent", new { id = @event.Id }, @event);
+            return CreatedAtAction("GetTEventById", new { id = @event.Id}, @event);
         }
 
-        // DELETE: api/Events/5
+        // DELETE: api/Events/{id}
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteEvent(int id)
+        public async Task<ActionResult> DeleteEvent(Guid id)
         {
             var @event = await _context.Events.FindAsync(id);
-            if (@event == null)
+
+            if(@event == null)
             {
                 return NotFound();
             }
@@ -100,7 +99,7 @@ namespace CalendarOfEvents_WebAPI.Controllers
             return NoContent();
         }
 
-        private bool EventExists(int id)
+        private bool EventExists(Guid id)
         {
             return _context.Events.Any(e => e.Id == id);
         }

@@ -14,8 +14,7 @@ namespace CalendarOfEvents_DataAccessLayer.Data
         {
         }
 
-        //Entidades
-        public DbSet<User> Users { get; set; }
+        //Entidad
         public DbSet<Event> Events { get; set; }
 
         //Modelo a crear

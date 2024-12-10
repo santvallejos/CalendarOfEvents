@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.VisualBasic;
 
 namespace CalendarOfEvents_DataAccessLayer.Models
 {
     public class Event
     {
-        public int Id { get; set; }
-        public string Tittle { get; set; }
-        public DateTime Date { get; set; }
+        public Guid Id { get; set; }
+        public string Title { get; set; }
+        public DateTime EventDate { get; set; }
         public string Description { get; set; }
-        public int UserId { get; set; }
-        public bool SendNotification { get; set; }
+        public bool SendNotification { get; set; } = false;
     }
 }
