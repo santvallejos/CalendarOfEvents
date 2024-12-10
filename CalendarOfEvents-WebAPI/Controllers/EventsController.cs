@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CalendarOfEvents_DataAccessLayer.Data;
 using CalendarOfEvents_DataAccessLayer.Models;
+using CalendarOfEvents_WebAPI.Infrastructure.DTO;
 
 namespace CalendarOfEvents_WebAPI.Controllers
 {
@@ -74,8 +75,17 @@ namespace CalendarOfEvents_WebAPI.Controllers
         // POST: api/Events
         [HttpPost]
 
-        public async Task<ActionResult<Event>> PostEvent(Event @event)
+        public async Task<ActionResult<Event>> PostEvent(PostEventDto eventDto)
         {
+            Event @event = new Event
+            {
+                Id = Guid.NewGuid(),
+                Title = eventDto.Title,
+                EventDate = eventDto.EventDate,
+                Description = eventDto.Description,
+                SendNotification = false
+            };
+
             _context.Events.Add(@event);
             await _context.SaveChangesAsync();
 
