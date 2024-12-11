@@ -34,6 +34,6 @@ app.UseAuthorization();
 app.UseRouting(); //Uso de rutas 
 
 app.MapControllers();
-app.MapHub<NotificationEventHub>("/Notification"); //URL del Hub
+app.MapHub<EventNotificationstHub>("/Notifications"); //URL del Hub
 
 app.Run();

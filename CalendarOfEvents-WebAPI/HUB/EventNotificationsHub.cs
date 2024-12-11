@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.SignalR;
 
-public class NotificationEventHub : Hub
+public class EventNotificationstHub : Hub
 {
     
 }
