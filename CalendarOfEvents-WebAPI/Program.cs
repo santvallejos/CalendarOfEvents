@@ -9,6 +9,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddSignalR(); //Añadir el servicio de SignalR
 
 //Contexto a mi base de datos
 builder.Services.AddDbContext<CalendarOfEventsDbContext>
@@ -30,7 +31,9 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+app.UseRouting(); //Uso de rutas 
 
 app.MapControllers();
+app.MapHub<NotificationEventHub>("/Notification"); //URL del Hub
 
 app.Run();

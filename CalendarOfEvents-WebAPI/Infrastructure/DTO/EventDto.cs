@@ -1,3 +1,6 @@
+using System.ComponentModel;
+using Newtonsoft.Json.Converters;
+
 namespace CalendarOfEvents_WebAPI.Infrastructure.DTO
 {
     public class PostEventDto

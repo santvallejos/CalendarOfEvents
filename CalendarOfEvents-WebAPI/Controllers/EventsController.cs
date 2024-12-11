@@ -74,9 +74,10 @@ namespace CalendarOfEvents_WebAPI.Controllers
 
         // POST: api/Events
         [HttpPost]
-
-        public async Task<ActionResult<Event>> PostEvent(PostEventDto eventDto)
+        public async Task<ActionResult<Event>> PostEvent([FromBody]PostEventDto eventDto)
         {
+            //Al trabajr con DTOs se debe crear una variable del tipo Event que instacie un new Event
+            //y los datos que no estan en el DTO se los genera
             Event @event = new Event
             {
                 Id = Guid.NewGuid(),
