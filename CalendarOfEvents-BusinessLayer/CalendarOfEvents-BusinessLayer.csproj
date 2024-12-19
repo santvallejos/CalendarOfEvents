@@ -1,5 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
+  <ItemGroup>
+    <ProjectReference Include="..\CalendarOfEvents-DataAccessLayer\CalendarOfEvents-DataAccessLayer.csproj" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <RootNamespace>CalendarOfEvents_BusinessLayer</RootNamespace>

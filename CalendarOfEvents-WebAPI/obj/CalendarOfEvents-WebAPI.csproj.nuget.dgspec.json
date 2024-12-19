@@ -25,7 +25,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/soficubilla/Documents/Projects/dotnet/CalendarOfEvents/CalendarOfEvents-DataAccessLayer/CalendarOfEvents-DataAccessLayer.csproj": {
+                "projectPath": "/Users/soficubilla/Documents/Projects/dotnet/CalendarOfEvents/CalendarOfEvents-DataAccessLayer/CalendarOfEvents-DataAccessLayer.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -182,9 +186,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.AspNetCore.SignalR": {
+            "Microsoft.AspNetCore.SignalR.Common": {
               "target": "Package",
-              "version": "[1.1.0, )"
+              "version": "[9.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -197,6 +201,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.10, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[9.0.0, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",

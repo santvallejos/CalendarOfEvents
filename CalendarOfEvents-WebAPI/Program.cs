@@ -10,6 +10,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSignalR(); //Añadir el servicio de SignalR
+builder.Services.AddScoped<EventService>();//Servicio de enventos
+builder.Services.AddHostedService<NotificationBackgroundService>();//Servicio en segundo plano de las notificaciones
 
 //Contexto a mi base de datos
 builder.Services.AddDbContext<CalendarOfEventsDbContext>
@@ -34,6 +36,6 @@ app.UseAuthorization();
 app.UseRouting(); //Uso de rutas 
 
 app.MapControllers();
-app.MapHub<EventNotificationstHub>("/Notifications"); //URL del Hub
+app.MapHub<EventNotificationsHub>("/Notifications"); //URL del Hub
 
 app.Run();

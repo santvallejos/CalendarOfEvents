@@ -21,3 +21,7 @@ C:/Users/Santi/Desktop/Proyectos/CalendarOfEvents/CalendarOfEvents-BusinessLayer
 /Users/soficubilla/Documents/Projects/dotnet/CalendarOfEvents/CalendarOfEvents-BusinessLayer/obj/Debug/net8.0/refint/CalendarOfEvents-BusinessLayer.dll
 /Users/soficubilla/Documents/Projects/dotnet/CalendarOfEvents/CalendarOfEvents-BusinessLayer/obj/Debug/net8.0/CalendarOfEvents-BusinessLayer.pdb
 /Users/soficubilla/Documents/Projects/dotnet/CalendarOfEvents/CalendarOfEvents-BusinessLayer/obj/Debug/net8.0/ref/CalendarOfEvents-BusinessLayer.dll
+/Users/soficubilla/Documents/Projects/dotnet/CalendarOfEvents/CalendarOfEvents-BusinessLayer/bin/Debug/net8.0/CalendarOfEvents-DataAccessLayer.dll
+/Users/soficubilla/Documents/Projects/dotnet/CalendarOfEvents/CalendarOfEvents-BusinessLayer/bin/Debug/net8.0/CalendarOfEvents-DataAccessLayer.pdb
+/Users/soficubilla/Documents/Projects/dotnet/CalendarOfEvents/CalendarOfEvents-BusinessLayer/obj/Debug/net8.0/CalendarOfEvents-BusinessLayer.csproj.AssemblyReference.cache
+/Users/soficubilla/Documents/Projects/dotnet/CalendarOfEvents/CalendarOfEvents-BusinessLayer/obj/Debug/net8.0/Calendar.98C8D955.Up2Date

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CalendarOfEvents-BusinessLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9d2a0000ea3495a67ac1b2a5883f78f99bcdc37")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+756db0bc1ffadd826156dd2111e88d685a9a93f0")]
 [assembly: System.Reflection.AssemblyProductAttribute("CalendarOfEvents-BusinessLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CalendarOfEvents-BusinessLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
