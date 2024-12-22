@@ -83,6 +83,8 @@ namespace CalendarOfEvents_WebAPI.Controllers
                 Id = Guid.NewGuid(),
                 Title = eventDto.Title,
                 EventDate = eventDto.EventDate,
+                EventHour = eventDto.EventHour,
+                EventMinute = eventDto.EventMinute,
                 Description = eventDto.Description,
                 SendNotification = false
             };

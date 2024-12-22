@@ -12,7 +12,9 @@ namespace CalendarOfEvents_DataAccessLayer.Models
     {
         public Guid Id { get; set; }
         public string Title { get; set; }
-        public DateTime EventDate { get; set; }
+        public string EventDate { get; set; }
+        public int EventHour { get; set; }
+        public int EventMinute { get; set; }
         public string Description { get; set; }
         public bool SendNotification { get; set; } = false;
     }

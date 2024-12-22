@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "DRjIibM38jcp+yHtzFUMsZ1tBGLVhYPwoW/NPOHsLWQ=",
+  "Hash": "x7r1TZoai6UNcO/TMZvlSlY3X4+FRr/htiouT4Av4DI=",
   "Source": "CalendarOfEvents-WebAPI",
   "BasePath": "_content/CalendarOfEvents-WebAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

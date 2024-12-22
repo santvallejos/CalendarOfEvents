@@ -25,19 +25,19 @@ public class NotificationBackgroundService : BackgroundService
             using(var scope = _serviceProvider.CreateScope()) //se crea un scope
             {
                 var eventService = scope.ServiceProvider.GetRequiredService<EventService>(); //invocar al servicio de eventos
-                var upcomingEvents = eventService.GetUpcomingEvents(); //Enlistar todos los evetnos
+                var startEvents = eventService.GetStartEvents(); //Enlistar todos los evetnos
 
                 //Notificar cada evento
-                foreach (var evt in upcomingEvents)
+                foreach (var evt in startEvents)
                 {
                     await _hubContext.Clients.All.SendAsync("ReceiveNotification", 
-                        $"El evento '{evt.Title}' está próximo!");
+                        $"El evento '{evt.Title}' ha llegado!");
 
                     eventService.MarkAsNotified(evt);
                 }
             }
 
-            await Task.Delay(TimeSpan.FromMinutes(1), stoppingtoken);
+            await Task.Delay(TimeSpan.FromSeconds(10), stoppingtoken);
         }
     }
 }

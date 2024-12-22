@@ -17,10 +17,16 @@ public class EventService
     }
 
     //Enlistar las notificaciones
-    public List<Event> GetUpcomingEvents()
+    public List<Event> GetStartEvents()
     {
+        //Parsear la fecha
+        DateTime date = DateTime.Now;
+        string dateStr = date.ToString("dd-MM-yyyy");
+
+        //Por cada evento que tenga Fecha, hora y minuto igual a la actual y que no haya sido notificado
+        //Se agrega a la lista de eventos empezados que se notificaran 
         return _context.Events
-            .Where(e => e.EventDate <= DateTime.Now.AddMinutes(5) && e.SendNotification == false)
+            .Where(e => e.EventDate == dateStr && e.EventHour == DateTime.Now.Hour && e.EventMinute == DateTime.Now.Minute && e.SendNotification == false)
                 .ToList();
     }
 

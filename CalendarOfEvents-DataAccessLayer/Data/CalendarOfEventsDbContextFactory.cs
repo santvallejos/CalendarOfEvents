@@ -8,7 +8,7 @@ namespace CalendarOfEvents_DataAccessLayer.Data
         public CalendarOfEventsDbContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<CalendarOfEventsDbContext>();
-            optionsBuilder.UseSqlServer("Server=localhost,1433;Database=CalendarOfEvents;User Id=sa;Password=Santi14183102*;TrustServerCertificate=True");
+            optionsBuilder.UseSqlServer("Data Source=SANTI\\SQLEXPRESS;Initial Catalog=CalendarOfEventsDatabase;Integrated Security=True;Encrypt=True;TrustServerCertificate=True");
 
             return new CalendarOfEventsDbContext(optionsBuilder.Options);
         }

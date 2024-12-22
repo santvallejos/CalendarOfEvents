@@ -3,28 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Santi\\Desktop\\Proyectos\\CalendarOfEvents\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B1DEDF57-D08E-494C-B462-67D3772F98C5}|CalendarOfEvents-DataAccessLayer\\CalendarOfEvents-DataAccessLayer.csproj|c:\\users\\santi\\desktop\\proyectos\\calendarofevents\\calendarofevents-dataaccesslayer\\migrations\\20241022013401_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1DEDF57-D08E-494C-B462-67D3772F98C5}|CalendarOfEvents-DataAccessLayer\\CalendarOfEvents-DataAccessLayer.csproj|solutionrelative:calendarofevents-dataaccesslayer\\migrations\\20241022013401_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1DEDF57-D08E-494C-B462-67D3772F98C5}|CalendarOfEvents-DataAccessLayer\\CalendarOfEvents-DataAccessLayer.csproj|c:\\users\\santi\\desktop\\proyectos\\calendarofevents\\calendarofevents-dataaccesslayer\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1DEDF57-D08E-494C-B462-67D3772F98C5}|CalendarOfEvents-DataAccessLayer\\CalendarOfEvents-DataAccessLayer.csproj|solutionrelative:calendarofevents-dataaccesslayer\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0A491DC-1FFB-4AE3-9E78-2A1F3E42119B}|CalendarOfEvents-WebAPI\\CalendarOfEvents-WebAPI.csproj|c:\\users\\santi\\desktop\\proyectos\\calendarofevents\\calendarofevents-webapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0A491DC-1FFB-4AE3-9E78-2A1F3E42119B}|CalendarOfEvents-WebAPI\\CalendarOfEvents-WebAPI.csproj|solutionrelative:calendarofevents-webapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0A491DC-1FFB-4AE3-9E78-2A1F3E42119B}|CalendarOfEvents-WebAPI\\CalendarOfEvents-WebAPI.csproj|c:\\users\\santi\\desktop\\proyectos\\calendarofevents\\calendarofevents-webapi\\controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0A491DC-1FFB-4AE3-9E78-2A1F3E42119B}|CalendarOfEvents-WebAPI\\CalendarOfEvents-WebAPI.csproj|solutionrelative:calendarofevents-webapi\\controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0A491DC-1FFB-4AE3-9E78-2A1F3E42119B}|CalendarOfEvents-WebAPI\\CalendarOfEvents-WebAPI.csproj|c:\\users\\santi\\desktop\\proyectos\\calendarofevents\\calendarofevents-webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{D0A491DC-1FFB-4AE3-9E78-2A1F3E42119B}|CalendarOfEvents-WebAPI\\CalendarOfEvents-WebAPI.csproj|solutionrelative:calendarofevents-webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0A491DC-1FFB-4AE3-9E78-2A1F3E42119B}|CalendarOfEvents-WebAPI\\CalendarOfEvents-WebAPI.csproj|c:\\users\\santi\\desktop\\proyectos\\calendarofevents\\calendarofevents-webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0A491DC-1FFB-4AE3-9E78-2A1F3E42119B}|CalendarOfEvents-WebAPI\\CalendarOfEvents-WebAPI.csproj|solutionrelative:calendarofevents-webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1DEDF57-D08E-494C-B462-67D3772F98C5}|CalendarOfEvents-DataAccessLayer\\CalendarOfEvents-DataAccessLayer.csproj|c:\\users\\santi\\desktop\\proyectos\\calendarofevents\\calendarofevents-dataaccesslayer\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1DEDF57-D08E-494C-B462-67D3772F98C5}|CalendarOfEvents-DataAccessLayer\\CalendarOfEvents-DataAccessLayer.csproj|solutionrelative:calendarofevents-dataaccesslayer\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,83 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20241022013401_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\Santi\\Desktop\\Proyectos\\CalendarOfEvents\\CalendarOfEvents-DataAccessLayer\\Migrations\\20241022013401_InitialCreate.cs",
-              "RelativeDocumentMoniker": "CalendarOfEvents-DataAccessLayer\\Migrations\\20241022013401_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\Santi\\Desktop\\Proyectos\\CalendarOfEvents\\CalendarOfEvents-DataAccessLayer\\Migrations\\20241022013401_InitialCreate.cs",
-              "RelativeToolTip": "CalendarOfEvents-DataAccessLayer\\Migrations\\20241022013401_InitialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Event.cs",
+              "DocumentMoniker": "C:\\Users\\Santi\\Desktop\\Proyectos\\CalendarOfEvents\\CalendarOfEvents-DataAccessLayer\\Models\\Event.cs",
+              "RelativeDocumentMoniker": "CalendarOfEvents-DataAccessLayer\\Models\\Event.cs",
+              "ToolTip": "C:\\Users\\Santi\\Desktop\\Proyectos\\CalendarOfEvents\\CalendarOfEvents-DataAccessLayer\\Models\\Event.cs",
+              "RelativeToolTip": "CalendarOfEvents-DataAccessLayer\\Models\\Event.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T01:34:02.614Z",
+              "WhenOpened": "2024-12-21T19:24:02.757Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Santi\\Desktop\\Proyectos\\CalendarOfEvents\\CalendarOfEvents-DataAccessLayer\\Models\\User.cs",
-              "RelativeDocumentMoniker": "CalendarOfEvents-DataAccessLayer\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\Santi\\Desktop\\Proyectos\\CalendarOfEvents\\CalendarOfEvents-DataAccessLayer\\Models\\User.cs",
-              "RelativeToolTip": "CalendarOfEvents-DataAccessLayer\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T01:32:05.56Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\Santi\\Desktop\\Proyectos\\CalendarOfEvents\\CalendarOfEvents-WebAPI\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "CalendarOfEvents-WebAPI\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\Santi\\Desktop\\Proyectos\\CalendarOfEvents\\CalendarOfEvents-WebAPI\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "CalendarOfEvents-WebAPI\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T01:29:43.229Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Santi\\Desktop\\Proyectos\\CalendarOfEvents\\CalendarOfEvents-WebAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "CalendarOfEvents-WebAPI\\appsettings.json",
-              "ToolTip": "C:\\Users\\Santi\\Desktop\\Proyectos\\CalendarOfEvents\\CalendarOfEvents-WebAPI\\appsettings.json",
-              "RelativeToolTip": "CalendarOfEvents-WebAPI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-21T23:09:59.645Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EventsController.cs",
-              "DocumentMoniker": "C:\\Users\\Santi\\Desktop\\Proyectos\\CalendarOfEvents\\CalendarOfEvents-WebAPI\\Controllers\\EventsController.cs",
-              "RelativeDocumentMoniker": "CalendarOfEvents-WebAPI\\Controllers\\EventsController.cs",
-              "ToolTip": "C:\\Users\\Santi\\Desktop\\Proyectos\\CalendarOfEvents\\CalendarOfEvents-WebAPI\\Controllers\\EventsController.cs",
-              "RelativeToolTip": "CalendarOfEvents-WebAPI\\Controllers\\EventsController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T22:25:46.417Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Santi\\Desktop\\Proyectos\\CalendarOfEvents\\CalendarOfEvents-WebAPI\\Program.cs",
-              "RelativeDocumentMoniker": "CalendarOfEvents-WebAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\Santi\\Desktop\\Proyectos\\CalendarOfEvents\\CalendarOfEvents-WebAPI\\Program.cs",
-              "RelativeToolTip": "CalendarOfEvents-WebAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T20:27:20.458Z"
             }
           ]
         }

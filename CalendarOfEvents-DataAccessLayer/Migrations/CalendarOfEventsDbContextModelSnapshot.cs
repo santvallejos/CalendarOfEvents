@@ -32,8 +32,15 @@ namespace CalendarOfEvents_DataAccessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("EventDate")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("EventDate")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("EventHour")
+                        .HasColumnType("int");
+
+                    b.Property<int>("EventMinute")
+                        .HasColumnType("int");
 
                     b.Property<bool>("SendNotification")
                         .HasColumnType("bit");
