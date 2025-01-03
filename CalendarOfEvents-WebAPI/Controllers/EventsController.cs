@@ -29,11 +29,26 @@ namespace CalendarOfEvents_WebAPI.Controllers
         }
 
         // GET: api/Events/{id}
-        [HttpGet("{eventDate}")]
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Event>> GetEventById(Guid id)
+        {
+            var @event = await _context.Events.FindAsync(id);
+
+            if(@event == null)
+            {
+                return NotFound();
+            }
+
+            return @event;
+        }
+
+        // GET: api/Events/ByDate/{Date}
+        [HttpGet("ByDate/{eventDate}")]
         public async Task<ActionResult<IEnumerable<Event>>> GetEventsByDate(string eventDate)
         {
+            var parseEventDate = DateTime.Parse(eventDate);
             //Cuando los eventos sea iguales al que se ingresa se agrega a una lista
-            var @event = await _context.Events.Where(e => e.EventDate == eventDate).ToListAsync();
+            var @event = await _context.Events.Where(e => e.EventDate.Date == parseEventDate.Date).ToListAsync();
 
             if (@event == null)
             {
@@ -84,8 +99,7 @@ namespace CalendarOfEvents_WebAPI.Controllers
                 Id = Guid.NewGuid(),
                 Title = eventDto.Title,
                 EventDate = eventDto.EventDate,
-                EventHour = eventDto.EventHour,
-                EventMinute = eventDto.EventMinute,
+                FinishEventDate = eventDto.FinishEventDate,
                 Description = eventDto.Description,
                 SendNotification = false
             };
@@ -93,7 +107,7 @@ namespace CalendarOfEvents_WebAPI.Controllers
             _context.Events.Add(@event);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetTEventById", new { id = @event.Id}, @event);
+            return CreatedAtAction("GetEventById", new { id = @event.Id}, @event);
         }
 
         // DELETE: api/Events/{id}
