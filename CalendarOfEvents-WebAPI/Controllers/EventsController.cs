@@ -29,10 +29,11 @@ namespace CalendarOfEvents_WebAPI.Controllers
         }
 
         // GET: api/Events/{id}
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Event?>> GetTEventById(Guid id)
+        [HttpGet("{eventDate}")]
+        public async Task<ActionResult<IEnumerable<Event>>> GetEventsByDate(string eventDate)
         {
-            var @event = await _context.Events.FindAsync(id);
+            //Cuando los eventos sea iguales al que se ingresa se agrega a una lista
+            var @event = await _context.Events.Where(e => e.EventDate == eventDate).ToListAsync();
 
             if (@event == null)
             {
