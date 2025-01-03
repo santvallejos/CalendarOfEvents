@@ -1,6 +1,5 @@
-<div align="center">
-Calendar Of Events ✏️🗓️
-</div>
+
+## Calendar Of Events ✏️🗓️
 
 Calendar of Events, allows us to manage events or reminders within a calendar, it has the function of showing, creating, updating and deleting events in a simple way that in turn, through SignalR, notifies us when an event has started.
 
