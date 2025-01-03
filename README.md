@@ -10,29 +10,36 @@ Calendar of Events, allows us to manage events or reminders within a calendar, i
 
 ## installation
 1.Clone this repository:
+
     ```bash
     git clone https://github.com/santvallejos/CalendarOfEvents-Backend.git
     ```
 
 2.Specify the connection string
     Place the connection string in your project's appsettings.json
+
     ```c#
     "ConnectionStrings": {
         "DefaultConnetion": "Server=localhost,1433;Database=CalendarOfEvents;User Id=sa;Password=########;TrustServerCertificate=True"
     }
     ```
+
     Also in the CalendarOfEventsDbContextFactory
-        ```c#
+
+    ```c#
     optionsBuilder.UseSqlServer("Server=localhost,1433;Database=CalendarOfEvents;User Id=sa;Password=########;TrustServerCertificate=True");
     ```
 
+
 3.Update the DB
+
     ```bash
     dotnet ef database update
     ```
 
 4.Running the API
     You can run the API in the CalendarOfEvents-WebAPI folder with:
+
     ```bash
     dotnet run
     ```
@@ -49,5 +56,5 @@ In addition, with the implementation of SignalR, it allows you to evaluate an ev
 
 ## author
 
-[![LinkedIn Follow](https://img.icons8.com/?size=100&id=447&format=png&color=000000)](https://www.linkedin.com/in/santiago-vallejos-97a933236/)
-[![Github](https://img.icons8.com/?size=100&id=62856&format=png&color=000000)](https://github.com/santvallejos)
+[![LinkedIn Follow](https://img.icons8.com/?size=50&id=447&format=png&color=000000)](https://www.linkedin.com/in/santiago-vallejos-97a933236/)
+[![Github](https://img.icons8.com/?size=50&id=62856&format=png&color=000000)](https://github.com/santvallejos)
