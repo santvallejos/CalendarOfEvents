@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CalendarOfEvents_DataAccessLayer.Migrations
 {
     [DbContext(typeof(CalendarOfEventsDbContext))]
-    [Migration("20241221195300_NewMigration")]
+    [Migration("20250103193342_NewMigration")]
     partial class NewMigration
     {
         /// <inheritdoc />
@@ -35,15 +35,11 @@ namespace CalendarOfEvents_DataAccessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("EventDate")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateTime>("EventDate")
+                        .HasColumnType("datetime2");
 
-                    b.Property<int>("EventHour")
-                        .HasColumnType("int");
-
-                    b.Property<int>("EventMinute")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("FinishEventDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<bool>("SendNotification")
                         .HasColumnType("bit");
