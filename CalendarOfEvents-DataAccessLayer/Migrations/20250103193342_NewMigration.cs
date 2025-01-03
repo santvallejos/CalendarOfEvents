@@ -17,9 +17,8 @@ namespace CalendarOfEvents_DataAccessLayer.Migrations
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    EventDate = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    EventHour = table.Column<int>(type: "int", nullable: false),
-                    EventMinute = table.Column<int>(type: "int", nullable: false),
+                    EventDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    FinishEventDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     SendNotification = table.Column<bool>(type: "bit", nullable: false)
                 },
