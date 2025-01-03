@@ -11,9 +11,9 @@ Calendar of Events, allows us to manage events or reminders within a calendar, i
 ## installation
 1.Clone this repository:
 
-    ```bash
+
     git clone https://github.com/santvallejos/CalendarOfEvents-Backend.git
-    ```
+
 
 2.Specify the connection string
     Place the connection string in your project's appsettings.json
