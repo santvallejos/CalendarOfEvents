@@ -31,7 +31,7 @@ public class NotificationBackgroundService : BackgroundService
                 foreach (var evt in startEvents)
                 {
                     await _hubContext.Clients.All.SendAsync("ReceiveNotification", 
-                        $"El evento '{evt.Title}' ha llegado!");
+                        evt.Title, evt.Description, evt.EventDate, evt.EventHour, evt.EventMinute);
 
                     eventService.MarkAsNotified(evt);
                 }

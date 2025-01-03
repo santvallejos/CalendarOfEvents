@@ -23,10 +23,18 @@ public class EventService
         DateTime date = DateTime.Now;
         string dateStr = date.ToString("dd-MM-yyyy");
 
+        //evitar realizar múltiples llamadas al método DateTime.Now durante la evaluación de la consulta LINQ
+        //Esto previene inconsistencias que pueden surgir debido a la diferencia de tiempo (incluso en milisegundos) entre las sucesivas llamadas a DateTime.Now
+        int currentHour = DateTime.Now.Hour;
+        int currentMinute = DateTime.Now.Minute;
+
         //Por cada evento que tenga Fecha, hora y minuto igual a la actual y que no haya sido notificado
         //Se agrega a la lista de eventos empezados que se notificaran 
         return _context.Events
-            .Where(e => e.EventDate == dateStr && e.EventHour == DateTime.Now.Hour && e.EventMinute == DateTime.Now.Minute && e.SendNotification == false)
+            .Where(e => e.EventDate == dateStr &&
+                    e.EventHour == currentHour && 
+                    e.EventMinute == currentMinute && 
+                    e.SendNotification == false)
                 .ToList();
     }
 
