@@ -15,22 +15,35 @@ Calendar of Events, allows us to manage events or reminders within a calendar, i
     git clone https://github.com/santvallejos/CalendarOfEvents-Backend.git
 
 2.Specify the connection string:
-    Place the connection string in your project's appsettings.json:
+Place the connection string in your project's appsettings.json, for example:
 
     "ConnectionStrings": {
         "DefaultConnetion": "Server=localhost,1433;Database=CalendarOfEvents;User Id=sa;Password=########;TrustServerCertificate=True"
     }
 
-3.Also in the CalendarOfEventsDbContextFactory:
+3.Also in the CalendarOfEventsDbContextFactory, for example:
 
     optionsBuilder.UseSqlServer("Server=localhost,1433;Database=CalendarOfEvents;User Id=sa;Password=########;TrustServerCertificate=True");
 
-4.Update the DB
+4.Indicate the origin from which we want to make the requests, for example:
+
+    builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowLocalhost4200", policy =>
+    {
+        policy.WithOrigins("http://localhost:4200")
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowAnyOrigin();
+    });
+});
+
+5.Update the DB
 
     dotnet ef database update
 
-5.Running the API
-    You can run the API in the CalendarOfEvents-WebAPI folder with:
+6.Running the API:
+You can run the API in the CalendarOfEvents-WebAPI folder with:
 
     dotnet run
 
