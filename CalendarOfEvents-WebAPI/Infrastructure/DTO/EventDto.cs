@@ -8,6 +8,5 @@ namespace CalendarOfEvents_WebAPI.Infrastructure.DTO
         public string Title { get; set; }
         public DateTime EventDate { get; set; }
         public DateTime FinishEventDate { get; set; }
-        public string Description { get; set; }
     }
 }

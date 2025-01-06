@@ -28,10 +28,6 @@ namespace CalendarOfEvents_DataAccessLayer.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<DateTime>("EventDate")
                         .HasColumnType("datetime2");
 

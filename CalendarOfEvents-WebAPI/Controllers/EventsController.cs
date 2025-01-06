@@ -100,7 +100,6 @@ namespace CalendarOfEvents_WebAPI.Controllers
                 Title = eventDto.Title,
                 EventDate = eventDto.EventDate,
                 FinishEventDate = eventDto.FinishEventDate,
-                Description = eventDto.Description,
                 SendNotification = false
             };
 
