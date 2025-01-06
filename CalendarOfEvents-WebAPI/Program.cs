@@ -21,6 +21,18 @@ builder.Services.AddDbContext<CalendarOfEventsDbContext>
          )
     );
 
+// Configuraci�n de CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowLocalhost4200", policy =>
+    {
+        policy.WithOrigins("http://localhost:4200") // Ajusta el origen seg�n tu frontend
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowAnyOrigin();
+    });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -30,7 +42,15 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors(x => x
+    .AllowAnyHeader()
+    .AllowAnyMethod()
+    .SetIsOriginAllowed(origin => true) // Permitir todas las solicitudes de origen
+    .AllowCredentials());
+
 app.UseHttpsRedirection();
+
+app.UseCors("AllowLocalhost4200"); // Aplicar la pol�tica de CORS
 
 app.UseAuthorization();
 app.UseRouting(); //Uso de rutas 

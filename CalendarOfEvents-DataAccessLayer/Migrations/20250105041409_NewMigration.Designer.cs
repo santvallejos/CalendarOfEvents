@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CalendarOfEvents_DataAccessLayer.Migrations
 {
     [DbContext(typeof(CalendarOfEventsDbContext))]
-    [Migration("20250103193342_NewMigration")]
+    [Migration("20250105041409_NewMigration")]
     partial class NewMigration
     {
         /// <inheritdoc />

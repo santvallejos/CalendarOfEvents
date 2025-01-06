@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/Users/soficubilla/Documents/Projects/Dotnet/CalendarOfEvents/CalendarOfEvents-Backend/CalendarOfEvents-DataAccessLayer/CalendarOfEvents-DataAccessLayer.csproj": {}
+    "C:\\Users\\Santi\\Desktop\\Projects\\CalendarOfEvents\\CalendarOfEvents-Backend\\CalendarOfEvents-DataAccessLayer\\CalendarOfEvents-DataAccessLayer.csproj": {}
   },
   "projects": {
-    "/Users/soficubilla/Documents/Projects/Dotnet/CalendarOfEvents/CalendarOfEvents-Backend/CalendarOfEvents-DataAccessLayer/CalendarOfEvents-DataAccessLayer.csproj": {
+    "C:\\Users\\Santi\\Desktop\\Projects\\CalendarOfEvents\\CalendarOfEvents-Backend\\CalendarOfEvents-DataAccessLayer\\CalendarOfEvents-DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/soficubilla/Documents/Projects/Dotnet/CalendarOfEvents/CalendarOfEvents-Backend/CalendarOfEvents-DataAccessLayer/CalendarOfEvents-DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Santi\\Desktop\\Projects\\CalendarOfEvents\\CalendarOfEvents-Backend\\CalendarOfEvents-DataAccessLayer\\CalendarOfEvents-DataAccessLayer.csproj",
         "projectName": "CalendarOfEvents-DataAccessLayer",
-        "projectPath": "/Users/soficubilla/Documents/Projects/Dotnet/CalendarOfEvents/CalendarOfEvents-Backend/CalendarOfEvents-DataAccessLayer/CalendarOfEvents-DataAccessLayer.csproj",
-        "packagesPath": "/Users/soficubilla/.nuget/packages/",
-        "outputPath": "/Users/soficubilla/Documents/Projects/Dotnet/CalendarOfEvents/CalendarOfEvents-Backend/CalendarOfEvents-DataAccessLayer/obj/",
+        "projectPath": "C:\\Users\\Santi\\Desktop\\Projects\\CalendarOfEvents\\CalendarOfEvents-Backend\\CalendarOfEvents-DataAccessLayer\\CalendarOfEvents-DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\Santi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Santi\\Desktop\\Projects\\CalendarOfEvents\\CalendarOfEvents-Backend\\CalendarOfEvents-DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/soficubilla/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Santi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -70,22 +76,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.11, 8.0.11]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.11, 8.0.11]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
