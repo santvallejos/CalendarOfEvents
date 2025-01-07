@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CalendarOfEvents-DataAccessLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c455b719d80a20ae00767a8337605c1a8d5b1f2d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75580246bdf615ebca416babc3ec45bd20eb3d8a")]
 [assembly: System.Reflection.AssemblyProductAttribute("CalendarOfEvents-DataAccessLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CalendarOfEvents-DataAccessLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
