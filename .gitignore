@@ -1,3 +1,1 @@
-# Ignore appsettings.json in CalendarOfEvents-WebAPI folder
-CalendarOfEvents-WebAPI/appsettings.json
-CalendarOfEvents-WebAPI/appsettings.Development.json
+/CalendarOfEvents-WebAPI/appsettings.json

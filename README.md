@@ -4,10 +4,47 @@
 Calendar of Events, allows us to manage events or reminders within a calendar, it has the function of showing, creating, updating and deleting events in a simple way that in turn, through SignalR, notifies us when an event has started.
 
 ## Table of Contents
+- [Project architecture](#architecture)
 - [Installation](#installation)
 - [Use](#use)
 - [Characteristics](#characteristics)
 - [Author](#author)
+
+## architecture
+
+    ```
+    CalendarOfEvents-Backend/
+    ├── CalendarOfEvents-BusinessLayer
+    │   ├── Services
+    │   │   └── EventService // Notifications logic
+    │   └── CalendarOfEvents-BusinessLayer.csproj
+    │
+    ├── CalendarOfEvents-DataAccessLayer
+    │   ├── Data
+    │   │   ├── CalendarOfEventsDbContext
+    │   │   └── CalendarOfEventsDbContextFactory
+    │   ├── Migrations
+    │   ├── Models
+    │   │   └── Event
+    │   └── CalendarOfEvents-DataAcessLayer.csproj
+    │
+    ├── CalendarOfEvents-WebAPI
+    │   ├── Controller
+    │   │   └── EventController
+    │   ├── Hub
+    │   │   └── EventNotificationsHub
+    │   ├── Infrastructure
+    │   │   └── Dto
+    │   │       └── EventDto
+    │   ├── Services
+    │   │   └── NotificationsBackgroundService
+    │   ├── appsettings.Development
+    │   ├── appsettings
+    │   └── CalendarOfEvents-WebAPI.csproj
+    │
+    ├── Program
+    └── CalendarOfEvents.sln
+    ```
 
 ## installation
 1.Clone this repository:
@@ -18,14 +55,10 @@ Calendar of Events, allows us to manage events or reminders within a calendar, i
 Place the connection string in your project's appsettings.json, for example:
 
     "ConnectionStrings": {
-        "DefaultConnetion": "Server=localhost,1433;Database=CalendarOfEvents;User Id=sa;Password=########;TrustServerCertificate=True"
+        "DefaultConnetion": "Server=########;Database=CalendarOfEvents;User Id=sa;Password=########;TrustServerCertificate=True"
     }
 
-3.Also in the CalendarOfEventsDbContextFactory, for example:
-
-    optionsBuilder.UseSqlServer("Server=localhost,1433;Database=CalendarOfEvents;User Id=sa;Password=########;TrustServerCertificate=True");
-
-4.Indicate the origin from which we want to make the requests, for example:
+3.Indicate the origin from which we want to make the requests, for example:
 
     builder.Services.AddCors(options =>
     {
@@ -38,11 +71,11 @@ Place the connection string in your project's appsettings.json, for example:
         });
     });
 
-5.Update the DB
+4.I create the DB and update it
 
     dotnet ef database update
 
-6.Running the API: <br/>
+5.Running the API: <br/>
 You can run the API in the CalendarOfEvents-WebAPI folder with:
 
     dotnet run
