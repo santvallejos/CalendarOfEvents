@@ -12,7 +12,6 @@ Calendar of Events, allows us to manage events or reminders within a calendar, i
 
 ## architecture
 
-    ```
     CalendarOfEvents-Backend/
     ├── CalendarOfEvents-BusinessLayer
     │   ├── Services
@@ -44,7 +43,6 @@ Calendar of Events, allows us to manage events or reminders within a calendar, i
     │
     ├── Program
     └── CalendarOfEvents.sln
-    ```
 
 ## installation
 1.Clone this repository:
