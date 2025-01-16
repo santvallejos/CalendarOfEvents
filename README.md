@@ -50,10 +50,18 @@ Calendar of Events, allows us to manage events or reminders within a calendar, i
     git clone https://github.com/santvallejos/CalendarOfEvents-Backend.git
 
 2.Specify the connection string:<br/>
-Place the connection string in your project's appsettings.json, for example:
+Create the appsettings.json and put the connection string of your project, for example:
 
-    "ConnectionStrings": {
-        "DefaultConnetion": "Server=########;Database=CalendarOfEvents;User Id=sa;Password=########;TrustServerCertificate=True"
+    {
+    "Logging": {
+        "LogLevel": {
+        "Default": "Information",
+        "Microsoft.AspNetCore": "Warning"
+        }
+        },
+        "ConnectionStrings": {
+            "DefaultConnetion": "Server=########;Database=CalendarOfEvents;User Id=sa;Password=########;TrustServerCertificate=True"
+        }
     }
 
 3.Indicate the origin from which we want to make the requests, for example:
