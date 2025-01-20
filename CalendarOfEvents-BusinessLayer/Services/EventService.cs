@@ -17,22 +17,14 @@ public class EventService
     }
 
     //Enlistar las notificaciones
-    public List<Event> GetStartEvents()
+    public List<Event> GetUpcomingEvents()
     {
-        //evitar realizar múltiples llamadas al método DateTime.Now durante la evaluación de la consulta LINQ
-        //Esto previene inconsistencias que pueden surgir debido a la diferencia de tiempo (incluso en milisegundos) entre las sucesivas llamadas a DateTime.Now
-        var currentDate = DateTime.Now.Date;
-        int currentHour = DateTime.Now.Hour;
-        int currentMinute = DateTime.Now.Minute;
-
-        //Por cada evento que tenga Fecha, hora y minuto igual a la actual y que no haya sido notificado
-        //Se agrega a la lista de eventos empezados que se notificaran 
+        var now = DateTime.Now;
         return _context.Events
-            .Where(e => e.EventDate.Date == currentDate &&
-                    e.EventDate.Hour == currentHour && 
-                    e.EventDate.Minute == currentMinute && 
-                    e.SendNotification == false)
-                .ToList();
+                    .Where(e => e.EventDate > now &&
+                                e.EventDate <= now.AddHours(1) &&
+                                !e.SendNotification)
+                    .ToList();
     }
 
     //La notificacion fue enviada
