@@ -23,7 +23,7 @@ public class EventService
         return _context.Events
                     .Where(e => e.EventDate > now &&
                                 e.EventDate <= now.AddHours(1) &&
-                                !e.SendNotification)
+                                e.SendNotification == false)
                     .ToList();
     }
 
