@@ -29,33 +29,47 @@ namespace CalendarOfEvents_WebAPI.Controllers
         }
 
         // GET: api/Events/{id}
+        // Buscar un evento con un id en especifico
         [HttpGet("{id}")]
         public async Task<ActionResult<Event>> GetEventById(Guid id)
         {
-            var @event = await _context.Events.FindAsync(id);
-
-            if(@event == null)
+            if(id == Guid.Empty)
             {
-                return NotFound();
+                return BadRequest("El GUID no puede estar vacío.");
             }
+            else
+            {
+                var @event = await _context.Events.FindAsync(id);
 
-            return @event;
+                if(@event == null)
+                {
+                    return NotFound();
+                }
+
+                return @event;
+            }
         }
 
-        // GET: api/Events/ByDate/{Date}
-        [HttpGet("ByDate/{eventDate}")]
-        public async Task<ActionResult<IEnumerable<Event>>> GetEventsByDate(string eventDate)
+        // GET: api/Events/TemporaryUser/{TemporaryUserId}
+        // Buscar Lista de eventos de un usuario en especifico
+        [HttpGet("TemporaryUser/{TemporaryUserId}")]
+        public async Task<ActionResult<IEnumerable<Event>>> GetEventTemporaryUserId(Guid TemporaryUserId)
         {
-            var parseEventDate = DateTime.Parse(eventDate);
-            //Cuando los eventos sea iguales al que se ingresa se agrega a una lista
-            var @event = await _context.Events.Where(e => e.EventDate.Date == parseEventDate.Date).ToListAsync();
-
-            if (@event == null)
+            if(TemporaryUserId == Guid.Empty)
             {
-                return NotFound();
+                return BadRequest("El GUID no puede estar vacío.");
             }
+            else
+            {
+                var @event = await _context.Events.Where(e => e.TemporaryUserId == TemporaryUserId).ToListAsync();
 
-            return @event;
+                if(@event == null)
+                {
+                    return NotFound();
+                }
+
+                return @event;
+            }
         }
 
         // PUT: api/Events/{id}
@@ -90,23 +104,40 @@ namespace CalendarOfEvents_WebAPI.Controllers
 
         // POST: api/Events
         [HttpPost]
-        public async Task<ActionResult<Event>> PostEvent([FromBody]PostEventDto eventDto)
+        public async Task<ActionResult<Event>> PostEvent([FromBody]PostEventDto eventDto, string UserId)
         {
-            //Al trabajr con DTOs se debe crear una variable del tipo Event que instacie un new Event
-            //y los datos que no estan en el DTO se los genera
-            Event @event = new Event
+            //Variable para parsear el Guid
+            Guid guidUserId;
+
+            //Validación de Guid
+            if(Guid.TryParse(UserId, out guidUserId))
             {
-                Id = Guid.NewGuid(),
-                Title = eventDto.Title,
-                EventDate = eventDto.EventDate,
-                FinishEventDate = eventDto.FinishEventDate,
-                SendNotification = false
-            };
+                if(guidUserId == Guid.Empty)
+                {
+                    return BadRequest("El GUID no puede estar vacío.");
+                }
 
-            _context.Events.Add(@event);
-            await _context.SaveChangesAsync();
+                //Al trabajr con DTOs se debe crear una variable del tipo Event que instacie un new Event
+                //y los datos que no estan en el DTO se los genera
+                Event @event = new Event
+                {
+                    Id = Guid.NewGuid(),
+                    TemporaryUserId = guidUserId,
+                    Title = eventDto.Title,
+                    EventDate = eventDto.EventDate,
+                    FinishEventDate = eventDto.FinishEventDate,
+                    SendNotification = false
+                };
 
-            return CreatedAtAction("GetEventById", new { id = @event.Id}, @event);
+                _context.Events.Add(@event);
+                await _context.SaveChangesAsync();
+
+                return CreatedAtAction("GetEventById", new { id = @event.Id}, @event);
+            }
+            else
+            {
+                return BadRequest("El GUID proporcionado no es válido.");
+            }
         }
 
         // DELETE: api/Events/{id}

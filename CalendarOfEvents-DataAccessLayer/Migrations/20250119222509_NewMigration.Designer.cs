@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CalendarOfEvents_DataAccessLayer.Migrations
 {
     [DbContext(typeof(CalendarOfEventsDbContext))]
-    [Migration("20250106234008_NewMigration")]
+    [Migration("20250119222509_NewMigration")]
     partial class NewMigration
     {
         /// <inheritdoc />
@@ -39,6 +39,9 @@ namespace CalendarOfEvents_DataAccessLayer.Migrations
 
                     b.Property<bool>("SendNotification")
                         .HasColumnType("bit");
+
+                    b.Property<Guid>("TemporaryUserId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Title")
                         .IsRequired()

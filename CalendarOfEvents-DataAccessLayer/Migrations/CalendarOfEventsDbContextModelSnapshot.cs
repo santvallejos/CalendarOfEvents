@@ -37,6 +37,9 @@ namespace CalendarOfEvents_DataAccessLayer.Migrations
                     b.Property<bool>("SendNotification")
                         .HasColumnType("bit");
 
+                    b.Property<Guid>("TemporaryUserId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
