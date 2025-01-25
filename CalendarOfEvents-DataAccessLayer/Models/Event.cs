@@ -11,7 +11,6 @@ namespace CalendarOfEvents_DataAccessLayer.Models
     public class Event
     {
         public Guid Id { get; set; }
-        public Guid TemporaryUserId { get; set; }
         public string Title { get; set; }
         public DateTime EventDate { get; set; }
         public DateTime FinishEventDate { get; set; }
