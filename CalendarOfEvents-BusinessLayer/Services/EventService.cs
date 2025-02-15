@@ -1,22 +1,18 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Collections.Generic;
-using CalendarOfEvents_DataAccessLayer;
 using CalendarOfEvents_DataAccessLayer.Data;
 using CalendarOfEvents_DataAccessLayer.Models;
 
 public class EventService
 {
-    //Contexto a la DB
     private readonly CalendarOfEventsDbContext _context;
     public EventService(CalendarOfEventsDbContext context)
     {
         _context = context;
     }
 
-    //Enlistar las notificaciones
+    // Lista de eventos que ocurrirán en la próxima hora y que aún no han sido notificados
     public List<Event> GetUpcomingEvents()
     {
         var now = DateTime.Now;
@@ -27,11 +23,17 @@ public class EventService
                     .ToList();
     }
 
-    //La notificacion fue enviada
+    // Marca un evento como notificado
     public void MarkAsNotified(Event evt)
     {
         evt.SendNotification = true;
         _context.Events.Update(evt);
         _context.SaveChanges();
+    }
+
+    // Obtiene un evento por su Guid
+    public Event GetEventById(Guid id)
+    {
+        return _context.Events.FirstOrDefault(e => e.Id == id);
     }
 }
