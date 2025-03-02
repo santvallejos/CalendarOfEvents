@@ -35,6 +35,8 @@ Calendar of Events, allows us to manage events or reminders within a calendar, i
     │   ├── Infrastructure
     │   │   └── Dto
     │   │       └── EventDto
+    │   ├── Jobs
+    │   │    └── NotificationJobs
     │   ├── Services
     │   │   └── NotificationsBackgroundService
     │   ├── appsettings.Development
