@@ -1,0 +1,74 @@
+# .gitignore para el monorepo CalendarOfEvents
+# Contiene reglas para la API (.NET) y el cliente (Angular)
+
+## Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Build outputs
+[Bb]in/
+[Oo]bj/
+**/bin/
+**/obj/
+**/publish/
+
+## NuGet
+*.nupkg
+packages/
+
+## Rider / ReSharper
+.idea/
+*.sln.iml
+_ReSharper*/
+*.DotSettings.user
+
+## VS Code workspace/settings
+.vscode/
+*.code-workspace
+
+## ASP.NET Core / .NET specific
+appsettings.Development.json
+secrets.json
+*.db
+*.log
+
+## Do not ignore source code or Migrations
+# (Las migraciones y modelos deben permanecer en el repo)
+
+## Node / Angular
+client/node_modules/
+client/dist/
+client/build/
+client/out-tsc/
+client/.angular/
+client/.angular/cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+## Environment files
+.env
+.env.*
+.env.local
+
+## Logs, coverage, and reports
+logs/
+coverage/
+*.lcov
+
+## OS files
+.DS_Store
+Thumbs.db
+
+## Temp / editor files
+*~
+*.swp
+*.tmp
+*.temp
+
+## TypeScript
+*.tsbuildinfo
